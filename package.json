@@ -1,0 +1,42 @@
+{
+  "name": "@8hobbies/browser-versions",
+  "version": "1.0.0",
+  "description": "Recommended minimum browser versions that are supported by web frontend.",
+  "main": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist",
+    "!/dist/vitest.config.d.ts",
+    "!/dist/vitest.config.js"
+  ],
+  "engines": {
+    "node": "^20 || ^22 || >=23"
+  },
+  "scripts": {
+    "clean": "rimraf dist/",
+    "compile": "tsc --project tsconfig.json",
+    "format": "eslint --fix *.ts *.mjs && prettier . .gitlab-ci.yml --write",
+    "lint": "eslint --report-unused-disable-directives --max-warnings=0 *.ts *.mjs && prettier . .gitlab-ci.yml --check",
+    "prepack": "npm run clean && npm run compile",
+    "test-all": "npm run compile && npm run lint && npm run doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/8hobbies/browser-versions.git"
+  },
+  "author": "8 Hobbies, LLC",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://gitlab.com/8hobbies/browser-versions/issues"
+  },
+  "homepage": "https://gitlab.com/8hobbies/browser-versions",
+  "devDependencies": {
+    "@8hobbies/eslint-conf-baseline": "^4.0.1",
+    "@types/node": "^22.5.0",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4"
+  }
+}
