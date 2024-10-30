@@ -6,7 +6,9 @@
 [GitLab](https://gitlab.com/8hobbies/browser-versions) | [GitHub](https://github.com/8hobbies/browser-versions)
 
 Recommended minimum browser versions that should be supported by web frontend. They are released
-roughly 3 years ago since the release date of this package version.
+roughly 3 years ago since the release date of this package version. We don't use something like
+`last 3 years, not dead` because we prefer stable browser version support, rather than continuously
+supporting the browsers that were released 3 years from exactly today, as time passes.
 
 ## Install
 
