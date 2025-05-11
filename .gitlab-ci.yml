@@ -18,7 +18,7 @@ include:
     file: "/templates/renovate-config-validator.gitlab-ci.yml"
 
 lint:
-  image: "node:22.14.0"
+  image: "node:22.15.0"
   script:
     - npm install
     - npm run lint
