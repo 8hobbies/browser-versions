@@ -33,9 +33,9 @@
   "homepage": "https://gitlab.com/8hobbies/browser-versions",
   "devDependencies": {
     "@8hobbies/eslint-conf-baseline": "6.0.0",
-    "@types/node": "24.10.4",
+    "@types/node": "24.10.9",
     "globals": "16.5.0",
-    "prettier": "3.7.4",
+    "prettier": "3.8.1",
     "rimraf": "6.1.2",
     "typescript": "5.9.3"
   }
